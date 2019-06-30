@@ -82,8 +82,8 @@ public class MopsGenerator {
             // menu
             String opCategory = mop.op.replace('.', '#').split("#")[0].replace("()", "");
             menu.append(menuTemplate
-                    .replace("MOPS", "MOPS>" + opCategory.substring(0, 1).toUpperCase() + opCategory.substring(1) + "(MOPS)")
-                    .replace("Mops example", mop.name)
+                    .replace("MOPS", "MOPS>" + opCategory.substring(0, 1).toUpperCase() + opCategory.substring(1))
+                    .replace("Mops example", mop.name + "(MOPS)")
                     .replace("MopsExample", "implementations." + mop.name)
             );
 
